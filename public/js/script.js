@@ -36,7 +36,7 @@ window.addEventListener('click', function (e) {
 const checkBox = document.querySelector('#dark-toggel');
 const html = document.querySelector('html');
 
-checkbox.addEventListener('click', function() {
+checkBox.addEventListener('click', function() {
     if (checkBox.checked) {
         html.classList.add('dark');
     }else{
