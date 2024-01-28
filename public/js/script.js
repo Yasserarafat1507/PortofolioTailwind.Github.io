@@ -33,11 +33,11 @@ window.addEventListener('click', function (e) {
 });
 
 // dark mode
-const checkbox = document.querySelector('#dark-toggel');
+const checkBox = document.querySelector('#dark-toggel');
 const html = document.querySelector('html');
 
 checkbox.addEventListener('click', function() {
-    if (checkbox.checked) {
+    if (checkBox.checked) {
         html.classList.add('dark');
     }else{
         html.classList.remove('dark');
@@ -47,8 +47,8 @@ checkbox.addEventListener('click', function() {
 // pindahkan toggel sesuai mode
 if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
         document.documentElement.classList.add('dark')
-        checkbox.checked = true;
+        checkBox.checked = true;
     } else {
         document.documentElement.classList.remove('dark')
-        checkbox.checked = false;
+        checkBox.checked = false;
     }
